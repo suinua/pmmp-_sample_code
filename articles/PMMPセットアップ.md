@@ -5,7 +5,7 @@
 `pmmp4/`フォルダを作成  
 ## Pocketmineのダウンロード
 [Github](https://github.com/pmmp/PocketMine-MP/releases/tag/4.2.1)から**Pocketmine.phar**と**start.cmd**をダウンロード
-![download]](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/download_from_github.png)
+![download](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/download_from_github.png)
 
 `pmmp4/`フォルダにコピーします
 ![folder_1](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_1.png)
