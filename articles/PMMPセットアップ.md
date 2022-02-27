@@ -5,13 +5,17 @@
 `pmmp4/`フォルダを作成  
 ## Pocketmineのダウンロード
 [Github](https://github.com/pmmp/PocketMine-MP/releases/tag/4.2.1)から**Pocketmine.phar**と**start.cmd**をダウンロード
-`pmmp4/`フォルダにコピー
-![folder](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder.png)
+![download]](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/download_from_github.png)
+
+`pmmp4/`フォルダにコピーします
+![folder_1](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_1.png)
+
 ## Binのダウンロード
 [Jenkins](https://jenkins.pmmp.io/job/PHP-8.0-Aggregate/)から**PHP-8.0-Windows-x64.zip**をダウンロード 
-![download](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/download.gif)
+![download](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/jenkins.png)
+
 展開して**bin**を`pmmp4/`にコピー
-![download_bin](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/download_bin.gif)
+![download_bin](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_2)
 
 ## Pocketmine起動
 コマンドプロンプトを起動して`start.cmd`を実行
@@ -110,7 +114,7 @@ PocketMine-MP は LGPL ライセンスのもとで許諾されており、
 [16:22:51.723] [Server thread/INFO]: 完了 (3.367 秒)! ヘルプを表示するには、"help" または "?" と入力してください
 ```
 実行後は`pmmp4/`フォルダがこのようになっているはずです
-![folder2](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder2.gif)
+![folder2](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_3.png)
 
 ## サーバー機から参加できるようにする
 管理者権限で以下のコマンドを実行
@@ -123,7 +127,7 @@ PocketMine-MP は LGPL ライセンスのもとで許諾されており、
 サーバーアドレス : **localhost**または**127.0.0.1**
 ポート : **19132**
 
-![server_list](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/server_list.gif)
+![server_list](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/server_list.png)
 ポート開放をしていないので、同じLANネットワークからのみ参加できます
 
 ポート開放をすることで、**外部IPアドレス**を使用してサーバーに参加することができますが、使っているルーターによるので今回は詳しくは書きません
