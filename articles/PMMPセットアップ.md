@@ -15,7 +15,7 @@
 ![download](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/jenkins.png)
 
 展開して**bin**を`pmmp4/`にコピー
-![download_bin](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_2)
+![download_bin](https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_2.png)
 
 ## Pocketmine起動
 コマンドプロンプトを起動して`start.cmd`を実行
@@ -23,20 +23,20 @@
 cd D:\pmmp4\ 作成した場所に移動
 start.cmd
 ```
-[?] Language (eng): **jpn**
-[?] ライセンスに同意しますか？ (y/N): **y**
-[?] セットアップウィザードをスキップしますか？ (y/N): **N**
-[?] サーバーの名前を付けてください (PocketMine-MP Server): ` `
-[?] Server port (IPv4) (19132): ` `
-[?] Server port (IPv6) (19133): ` `
-[?] デフォルトのゲームモード (0):` `
-[?] 最大オンラインプレイヤー数 (20):` `
-[?] Maximum view distance (chunks) (16):` `
-[?] OP プレイヤー名 (例: あなたのゲームの名前): **suinua**
-[?] ホワイトリストを有効にしますか？ (y/N): **N**
-[?] Query を無効にしますか？ (y/N):**y**
-`stop`で停止できます
-
+[?] Language (eng): **jpn**  
+[?] ライセンスに同意しますか？ (y/N): **y**  
+[?] セットアップウィザードをスキップしますか？ (y/N): **N**  
+[?] サーバーの名前を付けてください (PocketMine-MP Server): ` `  
+[?] Server port (IPv4) (19132): ` `  
+[?] Server port (IPv6) (19133): ` `  
+[?] デフォルトのゲームモード (0):` `  
+[?] 最大オンラインプレイヤー数 (20):` `  
+[?] Maximum view distance (chunks) (16):` `  
+[?] OP プレイヤー名 (例: あなたのゲームの名前): **suinua**  
+[?] ホワイトリストを有効にしますか？ (y/N): **N**  
+[?] Query を無効にしますか？ (y/N):**y**  
+`stop`で停止できます  
+  
 ログを載せて置きます
 ```
 C:\Users\Maati>cd D:\pmmp4
