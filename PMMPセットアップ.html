@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://suinua.github.io/pmmp_sample_code/PMMPセットアップ.html">
+    <meta property="og:title" content="PMMPセットアップ">
+    <meta property="og:image" content="https://suinua.github.io/pmmp_sample_code/thumbnails/PMMPセットアップ.png">
+    <meta property="og:description" content="">    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suinua.github.io/pmmp_sample_code/PMMPセットアップ.html" >
+    <meta content="pmmp_sample_code" property="og:site_name">  
+    
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@suinua" />
+    <meta name="twitter:title" content="PMMPセットアップ" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="https://suinua.github.io/pmmp_sample_code/thumbnails/PMMPセットアップ.png" />
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta property="uuid" content="8952cc5b-8fac-40ae-b2d8-0cb12aaca143">
+
+    <title>PMMPセットアップ</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+
+    <!-- Material Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/lioshi.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <link rel="stylesheet" href="https://suinua.github.io/pmmp_sample_code/style.css" />
+    <link rel="stylesheet" href="https://suinua.github.io/pmmp_sample_code/card.css" />
+    <link rel="stylesheet" href="https://suinua.github.io/pmmp_sample_code/folder-structre-menu.css" />
+    <link rel="stylesheet" href="https://suinua.github.io/pmmp_sample_code/article.css" />
+    <link rel="stylesheet" href="https://suinua.github.io/pmmp_sample_code/side-menu.css" />
+    <link rel="stylesheet" href="https://suinua.github.io/pmmp_sample_code/note.css" />
+    <link rel="stylesheet" href="https://suinua.github.io/pmmp_sample_code/smartphone.css" media="screen and (max-width: 1000px)">
+    <script src="https://suinua.github.io/pmmp_sample_code/main.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav-bar uk-navbar uk-navbar-container uk-margin">
+        <div class="site-name">
+            markdown-web
+        </div>
+        <button id="github-repository-button" class="uk-button uk-button-secondary github-button"><span
+                uk-icon="github"></span> Github</button>
+    </nav>
+    <div class="smartphone-nav uk-navbar">
+        <div class="smartphone-folder-structure-menu-button-wrap">
+            <div class="smartphone-folder-structure-menu-button">
+                <span uk-icon="icon: folder"></span>記事
+            </div>
+        </div>
+        <div class="smartphone-index-menu-button-wrap">
+            <div class="smartphone-index-menu-button">
+                <span uk-icon="icon: menu"></span>目次
+            </div>
+        </div>
+        <div class="smartphone-index">
+    <ul class="side-menu-index uk-grid-small" uk-grid>
+        <li class="scroll-nav-item-wrap scroll-nav-item-h1 uk-flex">
+    <a href="#pmmp%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">PMMPセットアップ</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#%E4%BD%9C%E6%A5%AD%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">作業フォルダ</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#pocketmine%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">Pocketmineのダウンロード</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#bin%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">Binのダウンロード</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#pocketmine%E8%B5%B7%E5%8B%95" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">Pocketmine起動</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A9%9F%E3%81%8B%E3%82%89%E5%8F%82%E5%8A%A0%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">サーバー機から参加できるようにする</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AB%E5%8F%82%E5%8A%A0" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">サーバーに参加</div>
+    </a>
+</li>
+
+    </ul>
+</div>
+
+
+        <div class="smartphone-folder-structure-menu-wrap">
+            <div class="sticky-element">
+                <div class="search-form">
+                    <form class="uk-search uk-search-default">
+                        <input class="search-input uk-search-input" type="search" placeholder="Search">
+                        <span uk-icon="icon: close; ratio: 1"></span>
+                    </form>
+                    <div class="selected-tags">
+                    </div>
+                </div>
+                <div class="folder-structure-menu">
+  <ul class="children">
+     <li>
+    <div class="menu-article"><a class="menu-article-title uk-link-reset" href="https://suinua.github.io/pmmp_sample_code/PMMPセットアップ.html" uuid="8952cc5b-8fac-40ae-b2d8-0cb12aaca143">PMMPセットアップ.md</a>
+        <div class="tags">
+           <div class="tag">#開発</div>
+        </div>
+    </div>
+ </li>
+<li>
+    <div class="menu-article"><a class="menu-article-title uk-link-reset" href="https://suinua.github.io/pmmp_sample_code/プラグイン作成と開発環境.html" uuid="a4a9a10a-5157-44a3-a592-73646b5d5d96">プラグイン作成と開発環境.md</a>
+        <div class="tags">
+           <div class="tag">#開発</div>
+        </div>
+    </div>
+ </li>
+<li>
+    <div class="menu-article"><a class="menu-article-title uk-link-reset" href="https://suinua.github.io/pmmp_sample_code/index.html" uuid="77c969ed-276a-426b-9bb0-68b8b2e8856a">index.md</a>
+        <div class="tags">
+           <div class="tag">#</div>
+        </div>
+    </div>
+ </li>
+
+  </ul>
+</div>
+    
+              </div>
+        </div>
+    </div>
+    
+    <article class="view-container">
+        <div class="left">
+            <div class="folder-structure-menu-wrap">
+                <div class="sticky-element">
+                    <div class="search-form">
+                        <form class="uk-search uk-search-default">
+                            <input class="uk-search-input" type="search" placeholder="Search">
+                            <span uk-icon="icon: close; ratio: 1"></span>
+                        </form>
+                        <div class="selected-tags">
+                        </div>
+                    </div>
+                    <div class="folder-structure-menu">
+  <ul class="children">
+     <li>
+    <div class="menu-article"><a class="menu-article-title uk-link-reset" href="https://suinua.github.io/pmmp_sample_code/PMMPセットアップ.html" uuid="8952cc5b-8fac-40ae-b2d8-0cb12aaca143">PMMPセットアップ.md</a>
+        <div class="tags">
+           <div class="tag">#開発</div>
+        </div>
+    </div>
+ </li>
+<li>
+    <div class="menu-article"><a class="menu-article-title uk-link-reset" href="https://suinua.github.io/pmmp_sample_code/プラグイン作成と開発環境.html" uuid="a4a9a10a-5157-44a3-a592-73646b5d5d96">プラグイン作成と開発環境.md</a>
+        <div class="tags">
+           <div class="tag">#開発</div>
+        </div>
+    </div>
+ </li>
+<li>
+    <div class="menu-article"><a class="menu-article-title uk-link-reset" href="https://suinua.github.io/pmmp_sample_code/index.html" uuid="77c969ed-276a-426b-9bb0-68b8b2e8856a">index.md</a>
+        <div class="tags">
+           <div class="tag">#</div>
+        </div>
+    </div>
+ </li>
+
+  </ul>
+</div>
+    
+                </div>
+            </div>
+
+            <div class="article-wrap">
+                <div class="article-title">
+                    PMMPセットアップ
+                </div>
+                <div class="article-context">
+                    <div class="article-tags">
+    <div class="article-tag">#開発</div>
+
+</div>
+
+                    <h1 id="pmmp%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">PMMPセットアップ</h1>
+<h2 id="%E4%BD%9C%E6%A5%AD%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80">作業フォルダ</h2>
+<p><code>pmmp4/</code>フォルダを作成</p>
+<h2 id="pocketmine%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89">Pocketmineのダウンロード</h2><a href="https://github.com/pmmp/PocketMine-MP/releases/tag/4.2.1)">https://github.com/pmmp/PocketMine-MP/releases/tag/4.2.1)</a><a href="https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/download_from_github.png)">https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/download_from_github.png)</a>
+<p><code>pmmp4/</code>フォルダにコピーします</p><a href="https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_1.png)">https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_1.png)</a>
+<h2 id="bin%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89">Binのダウンロード</h2><a href="https://jenkins.pmmp.io/job/PHP-8.0-Aggregate/)">https://jenkins.pmmp.io/job/PHP-8.0-Aggregate/)</a><a href="https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/jenkins.png)">https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/jenkins.png)</a>
+<p>展開して<strong>bin</strong>を<code>pmmp4/</code>にコピー</p><a href="https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_2.png)">https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_2.png)</a>
+<h2 id="pocketmine%E8%B5%B7%E5%8B%95">Pocketmine起動</h2>
+<p>コマンドプロンプトを起動して<code>start.cmd</code>を実行</p>
+<pre><code class="language-bat">cd D:\pmmp4\ 作成した場所に移動
+start.cmd
+</code></pre>
+<p>[?] Language (eng): <strong>jpn</strong><br />
+[?] ライセンスに同意しますか？ (y/N): <strong>y</strong><br />
+[?] セットアップウィザードをスキップしますか？ (y/N): <strong>N</strong><br />
+[?] サーバーの名前を付けてください (PocketMine-MP Server): <code></code><br />
+[?] Server port (IPv4) (19132): <code></code><br />
+[?] Server port (IPv6) (19133): <code></code><br />
+[?] デフォルトのゲームモード (0):<code></code><br />
+[?] 最大オンラインプレイヤー数 (20):<code></code><br />
+[?] Maximum view distance (chunks) (16):<code></code><br />
+[?] OP プレイヤー名 (例: あなたのゲームの名前): <strong>suinua</strong><br />
+[?] ホワイトリストを有効にしますか？ (y/N): <strong>N</strong><br />
+[?] Query を無効にしますか？ (y/N):<strong>y</strong><br />
+<code>stop</code>で停止できます</p>
+<p>ログを載せて置きます</p>
+<pre><code>C:\Users\Maati&gt;cd D:\pmmp4
+D:\pmmp4&gt;start.cmd
+[*] PocketMine-MP set-up wizard
+[*] Please select a language
+ 中文 (简体) =&gt; chs
+ Deutsch =&gt; deu
+ Ελληνικά =&gt; ell
+ English =&gt; eng
+ Français =&gt; fra
+ Hrvatski =&gt; hrv
+ 日本語 =&gt; jpn
+ 한국어 =&gt; kor
+ Latviešu =&gt; lav
+ Nederlands =&gt; nld
+ Pyccĸий =&gt; rus
+[?] Language (eng): jpn
+[*] 日本語が正しく選択されました。
+[*] PocketMine-MP へようこそ!
+新しいサーバーのセットアップを開始する前に、ライセンスに同意する必要があります。
+PocketMine-MP は LGPL ライセンスのもとで許諾されており、
+このフォルダーで LICENSE ファイルを読むことができます。
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Lesser General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+[?] ライセンスに同意しますか？ (y/N): y
+[?] セットアップウィザードをスキップしますか？ (y/N): N
+
+[*] サーバーのセットアップを開始します。
+[*] デフォルト値を変更しない場合は、Enter キーを押してください。
+[*] これらの設定は後で server.properties ファイルで編集できます。
+[?] サーバーの名前を付けてください (PocketMine-MP Server): server name
+[*] これが初めてのサーバーの場合は、デフォルトのポート値を変更しないでください。
+[?] Server port (IPv4) (19132):
+[?] Server port (IPv6) (19133):
+[*] クリエイティブ (1) またはサバイバル (0) のいずれかを選択してください
+[?] デフォルトのゲームモード (0):
+[?] 最大オンラインプレイヤー数 (20):
+[?] Maximum view distance (chunks) (16):
+[*] OP はサーバーのプレイヤー管理者です。OP は通常のプレイヤーよりも多くのコマンドを実行できます
+[?] OP プレイヤー名 (例: あなたのゲームの名前): suinua
+[*] ホワイトリストではリストに含まれているプレイヤーのみ参加できます。
+[?] ホワイトリストを有効にしますか？ (y/N): n
+[!] Query はサーバーとログインしているプレイヤーの情報を取得するためにさまざまなツールで使用されるプロトコルです。
+[!] それを無効にした場合、サーバーの一覧を使用できなくなります。
+[?] Query を無効にしますか？ (y/N):
+[*] 外部 IP と内部 IP を取得しています
+[!] あなたの外部 IP は ------- です。あなたの内部 IP 192.168.0.15 にポートフォワードが必要な可能性があります
+[!] 必ず確認してください。フォワードが必要な場合にスキップすると、外部からプレイヤーが参加できなくなります。[Enter キーを押してください]
+
+[*] セットアップウィザードは正しく終了しました
+[*] サーバーに新機能、ミニゲーム、または高度な保護を追加するには、プラグインリポジトリを確認してみてください
+[*] PocketMine-MP を開始します。使用可能なコマンドの一覧を /help で表示してください。
+
+
+[16:22:48.359] [Server thread/INFO]: Loading server configuration
+[16:22:48.431] [Server thread/INFO]: 日本語 (jpn) を基本言語として選択しました
+[16:22:48.450] [Server thread/INFO]: Minecraft: Bedrock Edition サーバーバージョン v1.18.10 を開始しています
+[16:22:48.460] [Server thread/INFO]: Online mode is enabled. The server will verify that players are authenticated to Xbox Live.
+[16:22:48.854] [Server thread/INFO]: このサーバーは PocketMine-MP バージョン 4.2.1 を実行しています
+[16:22:48.860] [Server thread/INFO]: PocketMine-MP は LGPL ライセンスのもとで配布されています
+[16:22:50.180] [Server thread/INFO]: Loading resource packs...
+[16:22:50.594] [Server thread/INFO]: ワールド "world" を準備しています
+[16:22:50.738] [Server thread/NOTICE]: ワールド "world" のスポーン地形がバックグラウンドで生成されています
+[16:22:51.114] [Server thread/INFO]: Minecraft ネットワークインターフェースは 0.0.0.0:19132 で動作しています
+[16:22:51.116] [Server thread/INFO]: GS4 Query リスナーは 0.0.0.0:19132 で動作しています
+[16:22:51.654] [Server thread/INFO]: Minecraft ネットワークインターフェースは [::]:19133 で動作していま す
+[16:22:51.654] [Server thread/INFO]: GS4 Query リスナーは [::]:19133 で動作しています
+[16:22:51.659] [Server thread/INFO]: デフォルトのゲームタイプ：サバイバルモード
+[16:22:51.660] [Server thread/INFO]: If you find this project useful, please consider donating to support development: https://patreon.com/pocketminemp
+[16:22:51.723] [Server thread/INFO]: 完了 (3.367 秒)! ヘルプを表示するには、"help" または "?" と入力してください
+</code></pre>
+<p>実行後は<code>pmmp4/</code>フォルダがこのようになっているはずです</p><a href="https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_3.png)">https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/folder_3.png)</a>
+<h2 id="%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A9%9F%E3%81%8B%E3%82%89%E5%8F%82%E5%8A%A0%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B">サーバー機から参加できるようにする</h2>
+<p>管理者権限で以下のコマンドを実行
+<code>CheckNetIsolation LoopbackExempt -a -n="Microsoft.MinecraftUWP_8wekyb3d8bbwe"</code></p>
+<h2 id="%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AB%E5%8F%82%E5%8A%A0">サーバーに参加</h2>
+<p>以下のようにサーバーを追加します</p>
+<p>サーバー名 : <strong>自由</strong>
+サーバーアドレス : <strong>localhost</strong>または<strong>127.0.0.1</strong>
+ポート : <strong>19132</strong></p><a href="https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/server_list.png)">https://raw.githubusercontent.com/suinua/pmmp-_sample_code/master/articles/server_list.png)</a>
+<p>ポート開放をしていないので、同じLANネットワークからのみ参加できます</p>
+<p>ポート開放をすることで、<strong>外部IPアドレス</strong>を使用してサーバーに参加することができますが、使っているルーターによるので今回は詳しくは書きません</p>
+
+                </div>
+
+                <div class="share">
+    <span url="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&url=PMMPセットアップ https://suinua.github.io/pmmp_sample_code/PMMPセットアップ.html"
+        class="uk-icon-button uk-margin-small-right twitter-button" uk-icon="twitter"></span>
+    <span text="https://suinua.github.io/pmmp_sample_code/PMMPセットアップ.html" class="uk-icon-button uk-margin-small-right copy-link-button"
+        uk-icon="link"></span>  
+    <div class="copied-message">Copied!</div>
+
+    <button id="github-edit-button" class="uk-button uk-button-secondary github-button"><span uk-icon="github"></span> view on github</button>
+</div>
+
+
+                <div class="committers-wrap">
+    <p>Contributors</p>
+    <div class="committers">
+      <div class="committer">
+<img class="uk-border-circle" src="https://avatars.githubusercontent.com/u/19864447?v=4" alt="">
+<p>web-flow</p>
+</div>
+<div class="committer">
+<img class="uk-border-circle" src="https://avatars.githubusercontent.com/u/34801662?v=4" alt="">
+<p>suinua</p>
+</div>
+    </div>
+</div>
+    
+
+                <div class="recommends-wrap">
+                    <p>recommends</p>
+                    <div class="recommends">
+                        <div class="recommend">
+                            <img src="thumbnail.png" alt="thumbnail">
+                        </div>
+                        <div class="recommend">
+                            <img src="thumbnail.png" alt="thumbnail">
+                        </div>
+                    </div>
+                    <div class="recommends">
+                        <div class="recommend">
+                            <img src="thumbnail.png" alt="thumbnail">
+                        </div>
+                        <div class="recommend">
+                            <img src="thumbnail.png" alt="thumbnail">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <aside class="right">
+          <div class="side-menu">
+     <div class="sticky-element">
+        <div class="side-menu-title">Index</div>
+        <ul class="side-menu-index uk-grid-small" uk-grid>
+          <li class="scroll-nav-item-wrap scroll-nav-item-h1 uk-flex">
+    <a href="#pmmp%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">PMMPセットアップ</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#%E4%BD%9C%E6%A5%AD%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">作業フォルダ</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#pocketmine%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">Pocketmineのダウンロード</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#bin%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">Binのダウンロード</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#pocketmine%E8%B5%B7%E5%8B%95" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">Pocketmine起動</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E6%A9%9F%E3%81%8B%E3%82%89%E5%8F%82%E5%8A%A0%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">サーバー機から参加できるようにする</div>
+    </a>
+</li>
+<li class="scroll-nav-item-wrap scroll-nav-item-h2 uk-flex">
+    <a href="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AB%E5%8F%82%E5%8A%A0" class="scroll-nav-item uk-flex uk-link-reset">
+        <div class="mark-filled">サーバーに参加</div>
+    </a>
+</li>
+
+        </ul>
+    </div>
+</div>
+
+        </aside>
+    </article>
+</body>
+
+</html>
+    
